@@ -1,3 +1,5 @@
+package com.ajwine;
+
 import java.util.Scanner;
 
 public class Exercise_7 {
@@ -13,7 +15,10 @@ public class Exercise_7 {
     }
 
     public static int getSentenceSize(String string) {
-        char[] chars = string.toCharArray();
+        if (string == null) {
+            return 0;
+        }
+        char[] chars = string.trim().toCharArray();
         boolean word = false;
         int count = 0;
         for (char c : chars) {

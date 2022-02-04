@@ -1,3 +1,5 @@
+package com.ajwine;
+
 import java.util.Scanner;
 
 public class Exercise_5 {
